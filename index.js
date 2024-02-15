@@ -2,19 +2,20 @@ const http = require("http");
 const express = require("express");
 const cors = require("cors");
 const socketIO = require("socket.io");
+const path = require("path");
 // const { Socket } = require("dgram");
 
 const app = express();
 const server = http.createServer(app);
-const port = 3500 || process.env.PORT;
+const port = process.env.PORT || 3500;
 
 const users = [{}];
 
 app.use(cors());
 
-app.get("/", (req, res) => {
-  res.send("Its Working");
-});
+// app.get("/", (req, res) => {
+//   res.send("Its Working");
+// });
 
 // Making io circuit
 const io = socketIO(server);
@@ -37,7 +38,7 @@ io.on("connection", (socket) => {
       user: "Admin",
       message: `${users[socket.id]} has joined`,
     });
-    
+
     // socket.broadcast.to(user).emit("sendMessage", {
     //   user: "Admin",
     //   message: `${users[socket.id]} has joined`,
@@ -59,6 +60,12 @@ io.on("connection", (socket) => {
     });
     console.log(`User left`);
   });
+});
+
+app.use(express.static("chatapp/build"));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "chatapp", "build", "index.html"));
 });
 
 server.listen(port, () => {

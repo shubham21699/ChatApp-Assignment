@@ -6,7 +6,7 @@ import Message from "../Messages/Message.jsx";
 import ReactScrollToBottom from "react-scroll-to-bottom";
 import Fade from "react-reveal/Fade";
 
-const ENDPOINT = "http://localhost:3500/";
+const ENDPOINT = "https://chatapp-assignment.onrender.com";
 let socket;
 
 const Chat = () => {
@@ -88,7 +88,9 @@ const Chat = () => {
               type="text"
               id="chatInput"
               placeholder="Type your message here"
-              onKeyPress={(event) => event.key === "Enter" ? sendMessage() : null}
+              onKeyPress={(event) =>
+                event.key === "Enter" ? sendMessage() : null
+              }
             ></input>
             <button onClick={sendMessage} className="send-btn">
               Send
