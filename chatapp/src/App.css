@@ -1,0 +1,23 @@
+@media (max-width: 1000px) {
+  .JoinContainer {
+    width: 80% !important;
+  }
+
+  #joinInput {
+    width: 80% !important;
+  }
+
+  .chatContainer {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .JoinContainer {
+    width: 60% !important;
+  }
+
+  #joinInput {
+    width: 70% !important;
+  }
+}

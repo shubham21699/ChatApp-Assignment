@@ -1,0 +1,23 @@
+.messageBox {
+  background-color: rgb(97, 94, 94);
+  /* min-width: 10%; */
+  color: white;
+  padding: 15px;
+  margin: 30px;
+  border-radius: 10px;
+  display: inline-block;
+  clear: both;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.left {
+    float: left;
+    background-color: rgb(97, 94, 94);
+    color: white;
+}
+
+.right {
+  float: right;
+  background-color: gainsboro;
+  color: black;
+}

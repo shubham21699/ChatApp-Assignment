@@ -1,0 +1,60 @@
+.JoinPage {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.JoinContainer {
+  background-color: gray;
+  border: 2px solid white;
+  border-radius: 10px;
+  min-height: 30%;
+  width: 50%;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.JoinContainer > h1 {
+  /* color: white; */
+  font-size: 50px;
+  font-family: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+  border-bottom: 2px solid white;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#joinInput {
+  width: 60%;
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-size: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.submit-btn {
+  min-width: 50%;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: all 0.3s;
+}
+
+.submit-btn:hover {
+  /* background-color: rgb(93, 53, 93); */
+  background-color: rgb(80, 79, 79);
+  color: white;
+  outline: 1px solid white;
+}
