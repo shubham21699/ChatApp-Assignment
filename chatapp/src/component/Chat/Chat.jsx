@@ -30,7 +30,7 @@ const Chat = () => {
     });
 
     // Sending data through emit
-    socket.emit("joined", { user });
+    socket.emit("joined", { user, id });
 
     socket.on("welcome", (data) => {
       setMessages([...messages, data]);

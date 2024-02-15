@@ -21,7 +21,7 @@ const io = socketIO(server);
 io.on("connection", (socket) => {
   console.log("New Connection");
 
-  socket.on("joined", ({ user }) => {
+  socket.on("joined", ({ user, id }) => {
     users[socket.id] = user;
     console.log(`${user} has joined`);
 
@@ -31,11 +31,20 @@ io.on("connection", (socket) => {
       message: `Welcome to the chat, ${users[socket.id]}`,
     });
 
+    // console.log("user joining");
     // This will be send to all users in the room
     socket.broadcast.emit("userJoined", {
       user: "Admin",
       message: `${users[socket.id]} has joined`,
     });
+    
+    // socket.broadcast.to(user).emit("sendMessage", {
+    //   user: "Admin",
+    //   message: `${users[socket.id]} has joined`,
+    //   id: id
+    // });
+
+    // console.log("user joining vghvjhbjk");
   });
 
   socket.on("message", ({ message, id }) => {
