@@ -5,8 +5,8 @@
 <img width="1440" alt="Screenshot 2024-02-15 at 4 48 24 PM" src="https://github.com/shubham21699/ChatApp-Assignment/assets/71596140/41fbaf22-dac5-4880-9f9b-9285ce13c804">
 
 
-### Steps for running code locally :-
+### Steps for running code locally:-
 1. Do npm start in chatapp-assignment for running server.
-2. Do npm start inside chatapp folder tu run frontend.
+2. Do npm start inside chatapp folder for running the frontend.
 
 
