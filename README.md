@@ -1,4 +1,6 @@
 ## Deployed Link: https://chatapp-assignment.onrender.com
+#### (Please wait a few seconds to load the hosted chat app on your browser)
+
 
 <img width="1439" alt="Screenshot 2024-02-15 at 4 47 01 PM" src="https://github.com/shubham21699/ChatApp-Assignment/assets/71596140/c0658bf8-9549-465f-9564-c6dba79b2626">
 
